@@ -1,0 +1,78 @@
+.content .project{
+  margin: 4%; 
+}
+
+.incomingprojectheader .headerleft, .incomingprojectheader .headerright{
+  width:48%;
+}
+
+.incomingprojectheader .headerleft{
+  float: left;
+}
+
+.incomingprojectheader .headerright{
+  float:right;
+}
+
+
+.incomingprojectcontent .projectwrap, .ongoingprojectcontent .projectwrap{
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+.incomingprojectcontent .projectwrap.clearfloat, .ongoingprojectcontent .projectwrap.clearfloat{
+  clear: left;
+}
+
+.incomingprojectcontent .projectwrap span, .ongoingprojectcontent .projectwrap span{
+  display: block; 
+  text-align: center;
+  width: 100%;
+}
+
+.projectwrap .projecttitle{
+  float: left;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.projectwrap .title{
+ font-size: 27px;
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  top: 36%;
+}
+
+
+.project button{
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 22px;
+    color: white;
+}
+/*project details css*/
+
+.projectdetailwrap{
+  padding: 2%;
+  margin-left: 6%;
+  width: 64%;
+}
+
+.syllabous-det-wrap .topic{
+  width:50%;
+  float: left;
+}
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop : */
+    .content .project {
+      padding: 10px;
+      margin-left: 100px;
+      width: 80%;
+    }
+}

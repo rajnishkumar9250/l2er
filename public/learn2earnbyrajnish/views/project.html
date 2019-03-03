@@ -1,0 +1,66 @@
+<!--page content start here-->
+  <div class="project">
+        <div class="incomingprojectwrap clearfix">
+          <div class="incomingprojectheader clearfix">
+            <div class="headerleft"><h2>Incoming Projects</h2></div>
+            <div class="headerright"><button ui-sref="requestforproject">Request for A Project</button></div>
+              
+          </div>
+          <div class="incomingprojectcontent">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('incomingproject')">
+              <div class="projecttitle">
+                <img src="image/class_bg.png" style="width:100%;">
+                <span class="title">{{projectdet.title}}</span>
+              </div>
+              <div class="classdescription">
+                  <span>{{projectdet.description}}</span>
+              </div>
+            </div>
+            <div ng-if="incomingProjectlength < 1">
+              <h4 style="margin-left: 5px;">No incoming Project Now</h4>
+            </div>
+          </div>
+        </div>
+        <div class="ongoingclasswrap clearfix">
+          <div class="ongoingclassheader">
+            <h2>Ongoing Projects</h2>
+          </div>
+          <div class="ongoingprojectcontent">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('ongoingproject')">
+              <div class="projecttitle">
+                <img src="image/class_bg.png" style="width:100%;">
+                <span class="title">{{projectdet.title}} </span>
+              </div>
+              <div class="projectdescription">
+                  <span>{{projectdet.description}}</span>
+              </div>
+            </div>
+            <div ng-if="ongoingProjectlength < 1">
+              <h4 style="margin-left: 5px;">No ongoing Project Now</h4>
+            </div>
+          </div>
+        </div>
+    
+        <div class="ongoingclasswrap clearfix">
+          <div class="ongoingclassheader">
+            <h2>Completed Projects</h2>
+          </div>
+          <div class="ongoingprojectcontent">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('completedproject')">
+              <div class="projecttitle">
+                <img src="image/class_bg.png" style="width:100%;">
+                <span class="title">{{projectdet.title}} </span>
+              </div>
+              <div class="projectdescription">
+                  <span>{{projectdet.description}}</span>
+              </div>
+            </div>
+            <div ng-if="completedProjectlength < 1">
+              <h4 style="margin-left: 5px;">No completed Project yet</h4>
+            </div>
+          </div>
+        </div>
+  </div>
+<!--</div>
+      
+      

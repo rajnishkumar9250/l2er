@@ -1,0 +1,59 @@
+<!-- start request for class-->
+<div class="requestforclasswrap">
+  <h3> Request for Class</h3>
+  <div class="requestclassform">
+    <form name="requestforclass">
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Email Id<span class="required">*</span></label></div>
+        <div class="inputwrap"><input type="text" ng-model="classInfo.emailid" required></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Mobile No<span class="required">*</span></label></div>
+        <div class="inputwrap"><input type="text" ng-model="classInfo.mobileno" required></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Technology<span class="required">*</span></label></div>
+        <div class="inputwrap"><input type="text" ng-model="classInfo.technology" required></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>No of Students</label></div>
+        <div class="inputwrap"><input type="text" ng-model="classInfo.noofstudents"></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Start Date</label></div>
+        <div class="inputwrap">
+          <datepicker date-format="dd/MM/yyyy" date-min-limit="{{classreq.todayDate}}" id="startdate">
+            <input type="text" ng-model="classInfo.startdate" placeholder="dd/MM/yyyy">
+          </datepicker>
+        </div>
+          
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>End Date</label></div>
+        <div class="inputwrap">
+          <datepicker date-format="dd/MM/yyyy" date-min-limit="{{classreq.endDate}}" id="enddate">
+            <input type="text" ng-model="classInfo.enddate" placeholder="dd/MM/yyyy">
+          </datepicker>
+        </div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Timing</label></div>
+        <div class="inputwrap"><input type="text" ng-model="classInfo.timing"></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Fee (In Rs.)</label></div>
+        <div class="inputwrap"><input type="text" ng-model="classInfo.fee"></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Description<span class="required">*</span></label></div>
+        <div class="inputwrap"><textarea ng-model="classInfo.description" required></textarea></div>
+      </div>
+      <br/>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label></label></div>
+        <div class="inputwrap">
+          <button ng-click="requestforcls()" ng-disabled="requestforclass.$invalid" name="reqclssubmit">Submit</button></div>
+      </div>
+    </form>
+  </div>
+</div>

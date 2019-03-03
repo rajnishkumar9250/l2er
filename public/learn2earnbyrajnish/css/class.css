@@ -1,0 +1,131 @@
+.content .class{
+  margin: 4%;
+}
+
+.incomingclasscontent .classwrap, .ongoingclasscontent .classwrap{
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+.incomingclasscontent .classwrap.clearfloat, .ongoingclasscontent .classwrap.clearfloat{
+  clear: left;
+}
+
+.incomingclassheader .headerleft, .incomingclassheader .headerright{
+  width:48%;
+}
+
+.incomingclassheader .headerleft{
+  float: left;
+}
+
+.incomingclassheader .headerright{
+  float:right;
+}
+
+.incomingclasscontent .classwrap span, .ongoingclasscontent .classwrap span{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.classwrap{
+  width: 100%;
+}
+
+.classwrap .classtitle{
+  float: left;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.classwrap .classtitle img{
+  width: 100%;
+}
+
+.classwrap .title{
+  font-size: 27px;
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  top: 36%;
+}
+
+.classwrap .description{
+  width: 80%;
+  position: relative;
+  top: -30px;
+}
+
+.classwrap .classdescription{
+  font-size: 16px;
+}
+
+.class button{
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 22px;
+    color: white;
+}
+
+/*class details css*/
+
+.content .classdetailwrap{
+  margin: 4%;
+}
+
+.classdet.mobile{
+  display: block;
+}
+
+.classdet.desktop{
+  display: none;
+}
+
+.syllabous-det-wrap .topic{
+  width:50%;
+  float: left;
+}
+
+.classdetailwrap .classdel_addresswrap{
+  width:100%;
+}
+
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+    /*class For desktop : */
+    .classwrap {
+        width:20%;
+    }
+  
+    .content .class {
+      padding: 10px;
+      margin-left: 100px;
+      width: 80%;
+    }
+  
+  
+  
+    /*class details css*/
+    .content  .classdetailwrap{
+      padding: 2%;
+      margin-left: 6%;
+      width: 64%;
+    }
+  
+    .classdet.mobile{
+      display: none;
+    }
+
+    .classdet.desktop{
+      display: block;
+    }
+    
+    .classdetailwrap .classdel_addresswrap{
+      width:54%;
+    }
+    
+}

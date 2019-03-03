@@ -1,0 +1,21 @@
+.content .about{
+  margin: 4%;
+}
+
+.content .para{
+  font-size: 30px;
+}
+
+.content .para:before { content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 "; }
+
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop : */
+    .content .about {
+      padding: 10px;
+      margin-left: 100px;
+      width: 80%;
+    }
+}

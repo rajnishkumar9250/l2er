@@ -1,0 +1,58 @@
+<!-- start request for class-->
+<div class="requestforclasswrap">
+  <h3> Request for Project</h3>
+  <div class="requestclassform">
+    <form name="requestforproject">
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Email Id<span class="required">*</span></label></div>
+        <div class="inputwrap"><input type="text" ng-model="projectInfo.emailid" required></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Mobile No<span class="required">*</span></label></div>
+        <div class="inputwrap"><input type="text" ng-model="projectInfo.mobileno" required></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Technology<span class="required">*</span></label></div>
+        <div class="inputwrap"><input type="text" ng-model="projectInfo.technology" required></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>No of Students</label></div>
+        <div class="inputwrap"><input type="text" ng-model="projectInfo.noofstudents"></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Start Date</label></div>
+        <div class="inputwrap">
+          <datepicker date-format="dd/MM/yyyy" date-min-limit="{{projectreq.todayDate}}" id="startdate">
+            <input type="text" ng-model="projectInfo.startdate" placeholder="YYYY-MM-DD">
+          </datepicker>
+        </div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>End Date</label></div>
+        <div class="inputwrap">
+          <datepicker date-format="dd/MM/yyyy" date-min-limit="{{projectreq.endDate}}" id="startdate">
+            <input type="text" ng-model="projectInfo.enddate" placeholder="YYYY-MM-DD">
+          </datepicker>
+        </div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Timing</label></div>
+        <div class="inputwrap"><input type="text" ng-model="projectInfo.timing"></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Fee (In Rs.)</label></div>
+        <div class="inputwrap"><input type="text" ng-model="projectInfo.fee"></div>
+      </div>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label>Description<span class="required">*</span></label></div>
+        <div class="inputwrap"><textarea ng-model="projectInfo.description" required></textarea></div>
+      </div>
+      <br/>
+      <div class="inputfieldwrap">
+        <div class="labelwrap"><label></label></div>
+        <div class="inputwrap">
+          <button ng-click="requestforproj()" ng-disabled="requestforproject.$invalid" name="reqclssubmit">Submit</button></div>
+      </div>
+    </form>
+  </div>
+</div>

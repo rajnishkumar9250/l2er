@@ -1,0 +1,22 @@
+.content .home{
+  margin: 4%; 
+}
+
+.home .question{
+  font-size: 30px;
+}
+
+.home .answer{
+  font-size: 25px;
+}
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop : */
+    .content .home {
+      padding: 10px;
+      margin-left: 100px;
+      width: 80%;
+    }
+}

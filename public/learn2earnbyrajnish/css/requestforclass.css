@@ -1,0 +1,49 @@
+.content .requestforclasswrap{
+  padding: 10px;
+  margin-left: 100px;
+  width: 80%;
+}
+
+.requestclassform .labelwrap, .requestclassform .inputwrap{
+  
+  float: left;
+}
+
+.requestclassform .labelwrap{
+  width: 100%;
+  font-size: 20px;
+}
+
+.requestclassform .inputwrap{
+  width: 48%;
+}
+
+.requestclassform .inputfieldwrap{
+  float: left;
+  width: 100%;
+  padding: 6px;
+}
+
+.requestclassform .required{
+  color: red;
+}
+
+.requestclassform button[name='reqclssubmit']{
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+}
+
+
+
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop : */
+    .requestclassform .labelwrap{
+      width: 20%;
+    }
+}

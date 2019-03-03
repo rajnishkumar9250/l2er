@@ -1,0 +1,28 @@
+.content .contact{
+  margin: 4%;
+}
+
+.content .addresswrap{
+  width: 100%;
+}
+
+.content .mapwrap{
+  width: 55%;
+  float: left;
+}
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop : */
+    .content .contact {
+      padding: 10px;
+      margin-left: 100px;
+      width: 80%;
+    }
+  
+    .content .addresswrap{
+      width: 30%;
+      float: left;
+    }
+}

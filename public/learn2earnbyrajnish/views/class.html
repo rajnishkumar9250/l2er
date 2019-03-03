@@ -1,0 +1,82 @@
+
+<!--page content start here-->
+<div class="class">
+        <div class="incomingclasswrap clearfix">
+          <div class="incomingclassheader clearfix">
+            <div class="headerleft"><h3>Incoming Classes</h3></div>
+            <div class="headerright"><button ui-sref="requestforclass">Request for A Class</button></div>
+          </div>
+          <div class="incomingclasscontent">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat classwrap' : 'classwrap'" ui-sref="classdetail({id:classdet.id})" ng-repeat="classdet in classlist | filter:classfilter('incomingclass')">
+              <div class="classtitle">
+                <img src="image/class_bg.png">
+                <span class="title">{{classdet.title}}</span>
+              </div>
+              <div class="classdescription">
+                <span>{{classdet.description}}</span>
+              </div>
+            </div>
+            <div ng-if="incomingClassLength < 1">
+              <h3 style="margin-left: 5px;">No incoming classes Now</h3>
+            </div>
+            <!--<div class="classwrap"  ui-sref="classdetail({id:2})">
+              <img src="image/class_bg.png">
+              <span class="title">class1</span>
+              <span class="description">Starting Date - 09/04/2017, 2:00 PM</span>
+            </div>-->
+          </div>
+        </div>
+        <div class="ongoingclasswrap clearfix">
+          <div class="ongoingclassheader">
+            <h3>Ongoing Classes</h3>
+          </div>
+          <div class="ongoingclasscontent">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat classwrap' : 'classwrap'"  ui-sref="classdetail({id:classdet.id})" ng-repeat="classdet in classlist | filter:classfilter('ongoingclass')">
+              <div class="classtitle">
+                <img src="image/class_bg.png">
+                <span class="title">{{classdet.title}}</span>
+              </div>
+              <div class="classdescription">
+                <span>{{classdet.description}}</span>
+              </div>
+            </div>
+            <div ng-if="ongoingClassLength < 1">
+              <h3 style="margin-left: 5px;">No ongoing classes Now</h3>
+            </div>
+            <!--<div class="classwrap"  ui-sref="classdetail({id:1})">
+              <img src="image/class_bg.png">
+              <span class="title">class1</span>
+              <span class="description">Starting Date - 08/03/2017, 2:00 PM</span>
+            </div>-->
+          </div>
+        </div>
+  
+         <div class="ongoingclasswrap clearfix">
+          <div class="ongoingclassheader">
+            <h3>Completed Classes</h3>
+          </div>
+          <div class="ongoingclasscontent">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat classwrap' : 'classwrap'"  ui-sref="classdetail({id:classdet.id})" ng-repeat="classdet in classlist | filter:classfilter('completedclass')">
+              <div class="classtitle">
+                <img src="image/class_bg.png">
+                <span class="title">{{classdet.title}}</span>
+              </div>
+              <div class="classdescription">
+                <span>{{classdet.description}}</span>
+              </div>
+            </div>
+            <div ng-if="completedClassLength < 1">
+              <h3 style="margin-left: 5px;">No completed classes yet</h3>
+            </div>
+            <!--<div class="classwrap"  ui-sref="classdetail({id:1})">
+              <img src="image/class_bg.png">
+              <span class="title">class1</span>
+              <span class="description">Starting Date - 08/03/2017, 2:00 PM</span>
+            </div>-->
+          </div>
+        </div>
+      </div>
+<!--end here-->
+    
+      
+      
