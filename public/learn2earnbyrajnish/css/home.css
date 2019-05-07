@@ -20,3 +20,9 @@
       width: 80%;
     }
 }
+@media only screen and (max-width:992) {
+	/* For laptop : */
+	.content.home {
+		margin-left: 3px;
+	}
+}

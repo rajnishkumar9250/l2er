@@ -1,3 +1,4 @@
+/*
 .content .class{
   margin: 4%;
 }
@@ -68,9 +69,9 @@
     font-size: 22px;
     color: white;
 }
-
+*/
 /*class details css*/
-
+/*
 .content .classdetailwrap{
   margin: 4%;
 }
@@ -92,12 +93,12 @@
   width:100%;
 }
 
-
+*/
 /*Media query*/
 
 @media only screen and (min-width: 768px) {
     /*class For desktop : */
-    .classwrap {
+    /*.classwrap {
         width:20%;
     }
   
@@ -106,11 +107,11 @@
       margin-left: 100px;
       width: 80%;
     }
-  
+  */
   
   
     /*class details css*/
-    .content  .classdetailwrap{
+    /*.content  .classdetailwrap{
       padding: 2%;
       margin-left: 6%;
       width: 64%;
@@ -127,5 +128,70 @@
     .classdetailwrap .classdel_addresswrap{
       width:54%;
     }
-    
+  */  
 }
+
+	@media only screen and (max-width: 992px) {
+	/* class for laptop : */
+	  
+	} 
+	.incomingclassheader .req_class_button {
+		background-color: green;
+		text-align: center;
+		float: right;
+		margin-right: 306px;
+		font-size: 30px;
+	}
+	.headerleft {
+		margin-left: 30px;
+		margin-top: 78px
+	}
+    .headerleft{
+            
+            margin-top: 109px;
+    }
+    .IncomingClasslength{
+        margin-left: 84px;
+    }
+    
+    .classtitle {
+       position: relative;      
+    }
+    .title {
+        position: absolute;
+        top: 48%;
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+    
+        .completedclass .classtitle img{
+            width: 100%;
+        }
+        .ongoingclasscontent  .classtitle img{
+            width: 100%;
+        }
+        .incomingclasscontent .classtitle img{
+            
+            width: 100%;
+        }
+        
+
+
+
+    /* class details */
+     @media only screen and (min-width: 992px) {
+	   /* class for tab : */            
+        .classdet.mobile {
+            display: none;
+        }
+       
+	   } 
+
+     @media only screen and (max-width:992px) {
+            /* class for desktop */
+         .classdet.desktop{
+            display: none;
+         }
+             
+    }

@@ -1,16 +1,21 @@
 <!--page content start here-->
   <div class="project">
-        <div class="incomingprojectwrap clearfix">
+        <div class="incomingprojectwrap clearfix container">
           <div class="incomingprojectheader clearfix">
             <div class="headerleft"><h2>Incoming Projects</h2></div>
-            <div class="headerright"><button ui-sref="requestforproject">Request for A Project</button></div>
+            <div class="headerright"><button ui-sref="requestforproject" class="req_class_button" style="border-radius: 12px;
+    float: right;
+    font-size: 26px;
+    background-color: green;
+    margin-bottom: 17px;
+    text-align: center;">Request for A Project</button></div>
               
           </div>
-          <div class="incomingprojectcontent">
-            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('incomingproject')">
+          <div class="incomingprojectcontent row">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('incomingproject')" class="col-md-3 col-sm-6 col-xs-12">
               <div class="projecttitle">
                 <img src="image/class_bg.png" style="width:100%;">
-                <span class="title">{{projectdet.title}}</span>
+                <span class="title" style="font-size: 17px;">{{projectdet.title}}</span>
               </div>
               <div class="classdescription">
                   <span>{{projectdet.description}}</span>
@@ -21,12 +26,12 @@
             </div>
           </div>
         </div>
-        <div class="ongoingclasswrap clearfix">
+        <div class="ongoingclasswrap clearfix container">
           <div class="ongoingclassheader">
             <h2>Ongoing Projects</h2>
           </div>
-          <div class="ongoingprojectcontent">
-            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('ongoingproject')">
+          <div class="ongoingprojectcontent row">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('ongoingproject')" class="col-md-3 col-sm-6  col-xs-12">
               <div class="projecttitle">
                 <img src="image/class_bg.png" style="width:100%;">
                 <span class="title">{{projectdet.title}} </span>
@@ -41,12 +46,12 @@
           </div>
         </div>
     
-        <div class="ongoingclasswrap clearfix">
+        <div class="ongoingclasswrap clearfix container">
           <div class="ongoingclassheader">
             <h2>Completed Projects</h2>
           </div>
-          <div class="ongoingprojectcontent">
-            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('completedproject')">
+          <div class="ongoingprojectcontent row">
+            <div ng-class="($index+1)%5  == 0 ? 'clearfloat projectwrap classwrap' : 'projectwrap classwrap'" ui-sref="projectdetail({id:projectdet.id})" ng-repeat="projectdet in projectlist | filter:projectfilter('completedproject')" class="col-md-3  col-sm-6 col-xs-12">
               <div class="projecttitle">
                 <img src="image/class_bg.png" style="width:100%;">
                 <span class="title">{{projectdet.title}} </span>
